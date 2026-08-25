@@ -192,3 +192,6 @@ footer{margin-top:0;padding:22px 0}.footer-compact{display:flex;align-items:cent
 .villa .mainpic>img{position:absolute;inset:0;width:100%;max-width:none;height:100%;object-fit:cover;object-position:center;transform-origin:center;animation:villaPhotoSlide 16s ease-in-out infinite;will-change:transform}
 @keyframes villaPhotoSlide{0%,100%{transform:translate3d(-14%,0,0) scale(1.28)}50%{transform:translate3d(14%,0,0) scale(1.28)}}
 @media(prefers-reduced-motion:reduce){.villa .mainpic>img{animation:none;transform:scale(1.12)}}
+
+/* Keep the mobile language selector above all hero content. */
+@media(max-width:850px){.hero>.nav{position:relative!important;z-index:1000!important;isolation:isolate}.nav .language-selector{position:relative;z-index:1001;pointer-events:auto}.nav .language-selector__toggle,.nav .language-selector__menu{pointer-events:auto}.nav .language-selector__menu{z-index:1002}}

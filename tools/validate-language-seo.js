@@ -9,14 +9,14 @@ for (const file of ['js/translations.js', 'js/elena-translations.js']) {
 
 const requiredKeys = [
   '85" CINEMA-SIZE SMART TV', 'BOX TV + NETFLIX',
-  'OUTDOOR KITCHEN & SALA', 'SPACIOUS COVERED DINING',
+  'BARBECUE & OUTDOOR KITCHEN: LARGE SALA', 'SPACIOUS COVERED DINING',
   'VILLA SIZE', 'LAND', 'INDOOR + OUTDOOR', '85″ TV', '2 CARS',
   '3 bedrooms', '3 bathrooms', 'Maximum occupancy: 6 guests',
   'Covered parking for 2 cars', 'Our Wine Shop Selection',
   'View on Google Maps →', 'TROPICAL LUXURY', 'BENEATH THE', 'PALMS',
   'Palm garden living,', 'entirely yours',
   'Wake up to palm-framed pool views, unwind in the tropical garden and share long evenings beneath the spacious sala. Set on 800 m² of private grounds, Palms Garden Villa is designed for effortless stays in Rawai.',
-  'Website Publisher', 'Website Owner: Michel Henlin', 'Hosting Provider',
+  'Website Publisher', 'Content Manager: Lionel Lopez', 'villadreamgarden@gmail.com', 'Hosting Provider',
   'Website hosting and technical management: Koh Concept',
   'Infrastructure provider: HOSTINGER PTE LTD', 'Server location: Malaysia', 'Privacy'
 ];
