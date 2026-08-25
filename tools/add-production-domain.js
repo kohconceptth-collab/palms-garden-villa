@@ -2,7 +2,7 @@ const fs = require('fs');
 
 const file = 'index.html';
 let html = fs.readFileSync(file, 'utf8');
-const domain = 'https://palmgardenvilla.kohconcept.com/';
+const domain = 'https://palmsgardenvilla.kohconcept.com/';
 
 const headMarker = '<meta property="og:type" content="website">';
 if (!html.includes(headMarker)) throw new Error('Métadonnées Open Graph introuvables.');

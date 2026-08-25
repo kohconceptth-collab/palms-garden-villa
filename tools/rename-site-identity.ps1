@@ -7,8 +7,8 @@ $files = Get-ChildItem -LiteralPath $root -Recurse -File | Where-Object {
 }
 
 $replacements = @(
-  @('https://elenaparadisevilla.com', 'https://palmgardenvilla.kohconcept.com'),
-  @('elenaparadisevilla.com', 'palmgardenvilla.kohconcept.com'),
+  @('https://elenaparadisevilla.com', 'https://palmsgardenvilla.kohconcept.com'),
+  @('elenaparadisevilla.com', 'palmsgardenvilla.kohconcept.com'),
   @('Elena Paradise Villa', 'Palm Garden Villa'),
   @('Elena Paradise', 'Palm Garden'),
   @('ELENA PARADISE', 'PALM GARDEN'),

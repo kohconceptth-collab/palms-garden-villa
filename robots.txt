@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://palmgardenvilla.kohconcept.com/sitemap.xml
+Sitemap: https://palmsgardenvilla.kohconcept.com/sitemap.xml

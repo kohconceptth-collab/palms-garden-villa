@@ -35,7 +35,7 @@ const checks = {
   languages: missing.length === 0,
   title: title.length >= 30 && title.length <= 60,
   description: description.length >= 110 && description.length <= 160,
-  canonical: html.includes('<link rel="canonical" href="https://palmgardenvilla.kohconcept.com/">'),
+  canonical: html.includes('<link rel="canonical" href="https://palmsgardenvilla.kohconcept.com/">'),
   structuredData: jsonLd['@type'] === 'VacationRental' && jsonLd.numberOfBedrooms === 3 && jsonLd.numberOfBathroomsTotal === 3,
   distinctStructuredImages: new Set(jsonLd.image || []).size >= 2,
   favicon: html.includes('assets/icons/palms-favicon-192.png')

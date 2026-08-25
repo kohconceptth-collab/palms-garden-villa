@@ -1,7 +1,7 @@
 $ErrorActionPreference = 'Stop'
 
 $root = Split-Path -Parent $PSScriptRoot
-$extensions = @('.html', '.js', '.py', '.txt', '.xml', '.webmanifest')
+$extensions = @('.html', '.css', '.js', '.py', '.txt', '.xml', '.webmanifest')
 $files = Get-ChildItem -LiteralPath $root -Recurse -File | Where-Object {
   $extensions -contains $_.Extension -or $_.Name -eq '.htaccess'
 }
@@ -67,7 +67,17 @@ $replacements = @(
   @('<h2>Space, luxury<br>and serenity</h2>', '<h2>Palm garden living,<br>entirely yours</h2>'),
   @('Nestled in the heart of Rawai, Palms Garden Villa offers an idyllic setting for an unforgettable holiday. Enjoy generous spaces, elegant décor and services designed for your comfort.', 'Wake up to palm-framed pool views, unwind in the tropical garden and share long evenings beneath the spacious sala. Set on 800 m² of private grounds, Palms Garden Villa is designed for effortless stays in Rawai.'),
   @('<section><h3>Website Publisher</h3><p>Palms Garden Villa<br>Phuket, Thailand<br>Website Owner: Chavdar Tiholov<br>Contact: <a href="mailto:office@biomind.bg">office@biomind.bg</a></p></section><section><h3>Hosting Provider</h3><p>SuperHosting.BG Ltd.<br>5 Nikola Tesla Str., BSR 2, 4th Floor<br>1574 Sofia, Bulgaria<br>UIN: 131449987<br>superhosting.bg</p></section>', '<section><h3>Website Publisher</h3><p>Palms Garden Villa<br>Phuket, Thailand<br>Website Owner: Michel Henlin</p></section><section><h3>Hosting Provider</h3><p>Website hosting and technical management: Koh Concept<br>Infrastructure provider: HOSTINGER PTE LTD<br>16 Raffles Quay, #33-03, Hong Leong Building<br>Singapore 048581<br>Server location: Malaysia<br>hostinger.com</p></section>'),
-  @('Website Owner: Lionel LOPEZ', 'Website Owner: Michel Henlin')
+  @('Website Owner: Lionel LOPEZ', 'Website Owner: Michel Henlin'),
+  @('palmgardenvilla.kohconcept.com', 'palmsgardenvilla.kohconcept.com'),
+  @("../assets/images/image-001.webp", "../assets/images/gallery-palms/web/IMG-20250930-WA0038.webp"),
+  @("../assets/images/image-001-mobile.webp", "../assets/images/gallery-palms/web/IMG-20250930-WA0038.webp"),
+  @("../assets/images/image-002.webp", "../assets/images/gallery-palms/web/IMG-20250930-WA0030.webp"),
+  @("../assets/images/gallery-elena/06-terrasse-piscine.webp", "../assets/images/gallery-palms/web/IMG-20250930-WA0022.webp"),
+  @("../assets/images/villa-preview-bathroom.webp", "../assets/images/gallery-palms/web/IMG-20250930-WA0024.webp"),
+  @("../assets/images/image-004.webp", "../assets/images/gallery-palms/web/IMG-20250930-WA0038.webp"),
+  @("../assets/images/image-005.webp", "../assets/images/gallery-palms/web/IMG-20250930-WA0038.webp"),
+  @('<a class="brand" id="fullscreenBrand"', '<a class="brand notranslate" translate="no" id="fullscreenBrand"'),
+  @('<div class="brand"><img class="footer-logo"', '<div class="brand notranslate" translate="no"><img class="footer-logo"')
 )
 
 $utf8NoBom = [System.Text.UTF8Encoding]::new($false)

@@ -29,13 +29,13 @@ html = html.replace(/(<img src="assets\/images\/gallery-palms\/web\/IMG-20250930
 html = html.replace(/(<div class="mainpic"><img src="assets\/images\/gallery-palms\/web\/IMG-20250930-)WA0038(\.webp")/, '$1WA0030$2');
 html = html
   .replace(/assets\/icons\/villa-location-qr\.svg(?:\?v=[^"']*)?/g, 'assets/icons/villa-location-qr.svg?v=palms-location-2')
-  .replace(/css\/style\.css(?:\?v=[^"']*)?/g, 'css/style.css?v=palms-28')
-  .replace(/js\/script\.js(?:\?v=[^"']*)?/g, 'js/script.js?v=palms-28')
+  .replace(/css\/style\.css(?:\?v=[^"']*)?/g, 'css/style.css?v=palms-30')
+  .replace(/js\/script\.js(?:\?v=[^"']*)?/g, 'js/script.js?v=palms-30')
   .replace(/<b>PALM<\/b><small>GARDEN VILLA/g, '<b>PALMS</b><small>GARDEN VILLA')
   .replaceAll('assets/images/image-001.png', 'assets/images/gallery-palms/web/IMG-20250930-WA0044.webp')
   .replaceAll('assets/images/image-001-mobile.webp', 'assets/images/gallery-palms/web/IMG-20250930-WA0044.webp')
   .replaceAll('assets/images/image-001.webp', 'assets/images/gallery-palms/web/IMG-20250930-WA0044.webp')
-  .replace('https://palmgardenvilla.kohconcept.com/assets/images/gallery-elena/01-piscine-facade.png', 'https://palmgardenvilla.kohconcept.com/assets/images/gallery-palms/web/IMG-20250930-WA0044.webp');
+  .replace('https://palmsgardenvilla.kohconcept.com/assets/images/gallery-elena/01-piscine-facade.png', 'https://palmsgardenvilla.kohconcept.com/assets/images/gallery-palms/web/IMG-20250930-WA0044.webp');
 const headEnd = html.indexOf('</head>');
 html = html.slice(0, headEnd).replaceAll('IMG-20250930-WA0044.webp', 'IMG-20250930-WA0038.webp') + html.slice(headEnd);
 fs.writeFileSync(htmlFile, html);
